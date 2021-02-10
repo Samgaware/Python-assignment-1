@@ -1,0 +1,522 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Assignment 1.ipynb",
+      "provenance": [],
+      "collapsed_sections": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "df5FTTDUFaN6"
+      },
+      "source": [
+        "1.-> Experiment with 5 lists in built function. "
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "mDTTrlr8FTOE",
+        "outputId": "ce2d07b1-9d4f-4836-f668-c2c02f691888"
+      },
+      "source": [
+        "Record=[1, \"SAM\", \"BCS\", \"UDGIR\"]\r\n",
+        "print(Record)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "[1, 'SAM', 'BCS', 'UDGIR']\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "i7CHZjHYI9GQ"
+      },
+      "source": [
+        "Record.clear() #Removes all the elements from the list"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "dCXS1MPwJO0I",
+        "outputId": "072bfedd-b481-4143-90b5-2a4adf6ea3d5"
+      },
+      "source": [
+        "print(Record)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "[]\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "lhvFGU3IJYfO"
+      },
+      "source": [
+        "Record=[1,\"Vishwa\",\"MCA\",\"Hydrabad\"]"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "wnie7-aBJyeO",
+        "outputId": "7f13eb62-23b0-4411-88cb-15108d81cd5a"
+      },
+      "source": [
+        "print(Record)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "[1, 'Vishwa', 'MCA', 'Hydrabad']\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "zQRjHt--J6nn",
+        "outputId": "9c98cdb5-4dd4-4c8a-d2e5-84fe725fa7d6"
+      },
+      "source": [
+        "Record.append(\"SMG College\")#Adds an element at the end of the list\r\n",
+        "print(Record)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "[1, 'Vishwa', 'MCA', 'Hydrabad', 'SMG College']\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "O0J37oTeKXX7",
+        "outputId": "589416a4-52ec-4d43-8178-f091512a9aa1"
+      },
+      "source": [
+        "Record.insert(0,1001)#Adds an element at the specified position\r\n",
+        "print(Record)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "[1001, 1, 'Vishwa', 'MCA', 'Hydrabad', 'SMG College']\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "3zH9z2k2Ku9n",
+        "outputId": "f440b721-5dcc-4656-cb1f-378607d35e1f"
+      },
+      "source": [
+        "print(len(Record))"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "6\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "UGy25WYjK33u",
+        "outputId": "e2c1e582-936d-4446-d3a7-3c0440c88e12"
+      },
+      "source": [
+        "y=Record.index(\"MCA\")#Returns the index of the first element with the specified value\r\n",
+        "print(y)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "3\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "rfXunGzdLQZE",
+        "outputId": "28c96225-3274-444e-f787-ec817cf51da9"
+      },
+      "source": [
+        "Record.pop(1)  #method removes the element at the specified position\r\n",
+        "print(Record)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "[1001, 'Vishwa', 'MCA', 'Hydrabad', 'SMG College']\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "HuxcqYzwNFzv",
+        "outputId": "6b17a884-9170-4b44-a5ab-9705684fdcfa"
+      },
+      "source": [
+        "Record.reverse()\r\n",
+        "print(Record)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "['SMG College', 'Hydrabad', 'MCA', 'Vishwa', 1001]\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "hzUZ89e9N_Zt",
+        "outputId": "e70b9729-cd10-4398-a60d-100684fb1757"
+      },
+      "source": [
+        "cars = ['Ford', 'BMW', 'Volvo']\r\n",
+        "\r\n",
+        "cars.sort(reverse=True)\r\n",
+        "\r\n",
+        "print(cars)\r\n"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "['Volvo', 'Ford', 'BMW']\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "YJ9zs8DROzpo"
+      },
+      "source": [
+        "2->Experiment With 5 Dictionary In Built Function."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "teaas3VLQRpW",
+        "outputId": "a21043a2-4f3d-4a8a-c32a-abb9b6246328"
+      },
+      "source": [
+        "myDict={\"Roll no\":1001, \"name\":\"SAMY\",\"CITY\":\"UDGIR\"}\r\n",
+        "print(myDict)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "{'Roll no': 1001, 'name': 'SAMY', 'CITY': 'UDGIR'}\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "f8yeBaqMRJiJ",
+        "outputId": "5259010e-ec11-48ee-f1da-d788742369bb"
+      },
+      "source": [
+        "X=myDict.get(\"name\") #Returns the value of the specified key\r\n",
+        "print(X)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "SAMY\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "vDTBH_4DSBv3",
+        "outputId": "158a5275-2bf8-4177-f516-75b9b273f5f3"
+      },
+      "source": [
+        "x = myDict.items()#Returns a list containing a tuple for each key value pair\r\n",
+        "\r\n",
+        "myDict[\"Roll no\"] = 1000\r\n",
+        "\r\n",
+        "print(x)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "dict_items([('Roll no', 1000), ('name', 'SAMY'), ('CITY', 'UDGIR')])\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ek-0G0yySti8",
+        "outputId": "c836a321-66cd-4fc3-eda8-ab6153e39372"
+      },
+      "source": [
+        "x = myDict.keys()#Returns a list containing the dictionary's keys\r\n",
+        "\r\n",
+        "print(x)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "dict_keys(['Roll no', 'name', 'CITY'])\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "YQVrTZ68S0Q1",
+        "outputId": "bdad9a29-2cf2-43ec-b832-d47ea1fd4dc5"
+      },
+      "source": [
+        "x = myDict.values()#Returns a list of all the values in the dictionary\r\n",
+        "\r\n",
+        "print(x)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "dict_values([1000, 'SAMY', 'UDGIR'])\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "vI5H1uwETNwO",
+        "outputId": "7a5d744e-76f8-4cd8-a5bb-6d71d6996322"
+      },
+      "source": [
+        "myDict.popitem()#Removes the last inserted key-value pair\r\n",
+        "\r\n",
+        "print(myDict)\r\n"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "{'Roll no': 1000, 'name': 'SAMY'}\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "XghNYWbtTahP",
+        "outputId": "a2ba46bc-ca64-49d5-8e3e-ea11596ca034"
+      },
+      "source": [
+        "myDict.update({\"GRADE\": \"A+\"})  #Updates the dictionary with the specified key-value pairs\r\n",
+        "\r\n",
+        "print(myDict)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "{'Roll no': 1000, 'name': 'SAMY', 'GRADE': 'A+'}\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "syzHkjS5T-Av",
+        "outputId": "6de13c8c-afe3-4d21-cbce-3e015aa1faec"
+      },
+      "source": [
+        "Data = myDict.copy() #Returns a copy of the dictionary\r\n",
+        "\r\n",
+        "print(Data)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "{'Roll no': 1000, 'name': 'SAMY', 'GRADE': 'A+'}\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Jm2LjYuxUIWO",
+        "outputId": "f57b3e82-5b02-415d-8974-983e4911b84a"
+      },
+      "source": [
+        "Data.clear() #Remove  all record from dictionary\r\n",
+        "\r\n",
+        "print(Data)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "{}\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
